@@ -40,6 +40,14 @@ h2 {
     font-size: 20px; /* Tamaño más adaptable */
 }
 
+/* Párrafo debajo del título */
+form p {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 /* Labels */
 label { 
     font-weight: bold; 
@@ -101,26 +109,142 @@ button:hover {
 
 /* Ajustes para pantallas pequeñas */
 @media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    form {
-        width: 100%; 
-        max-width: 320px; /* Más compacto */
-        padding: 15px; 
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    input, textarea {
-        font-size: 13px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 10px;
-    }
+/* Allgemeine Stile */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
+body { 
+font-family: 'Arial', sans-serif; 
+background: #f8f9fa; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+min-height: 100vh; 
+padding: 15px; /* Abstand zum Vermeiden von Kanten auf Mobilgeräten */
+}
+
+/* Formularinhalt */
+form { 
+background: white; 
+padding: 20px; 
+border-radius: 10px; 
+width: 100%; 
+max-width: 360px; /* Reduziere die Größe für eine bessere Anpassung */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+text-align: center;
+animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Eingangseffekt */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* Titel */
+h2 {
+margin-bottom: 10px;
+color: #333;
+font-size: 20px; /* Größe anpassbarer */
+}
+
+/* Unterer Teil des Titels */
+form p {
+margin-bottom: 20px;
+color: #555;
+font-size: 14px;
+line-height: 1.5;
+}
+
+/* Labels */
+label { 
+font-weight: bold; 
+display: block; 
+margin-top: 8px; 
+text-align: left;
+font-size: 13px;
+color: #555;
+}
+
+/* Eingabefelder */
+input, textarea { 
+width: 100%; 
+padding: 12px; 
+margin: 5px 0; 
+border: 1px solid #ccc; 
+border-radius: 6px; 
+font-size: 14px;
+Übergang: alle 0,3 s, ease-in-out;
+Schriftfamilie: inherit; /* Verwende die gleiche Schriftart */
+}
+
+/* Stile, damit die Felder nicht an den Rändern hängen */
+Eingabe: Fokus, Textbereich: Fokus {
+Rahmenfarbe: #007bff;
+Umriss: keiner;
+Boxschatten: 0px 0px 5px rgba(0, 123, 255, 0,4);
+}
+
+/* Senden-Schaltfläche */
+Schaltfläche { 
+Hintergrund: #007bff; 
+Farbe: weiß; 
+Rahmen: keiner; 
+Polsterung: 12px; 
+Cursor: Zeiger; 
+Breite: 100 %; 
+Rahmenradius: 6px; 
+Schriftgröße: 15px;
+Schriftstärke: fett;
+Übergang: alle 0,3 s;
+}
+
+/* Bewirkt, dass die Maus über die Taste gedrückt wird */
+button:hover { 
+    Hintergrund: #0056b3; 
+    transform: scale(1.02);
+    Box-Shadow: 0px 3px 8px rgba(0, 91, 187, 0.3);
+}
+
+/* Fehlermeldung zur Fehlerbestätigung */
+#mensaje { 
+    Textausrichtung: Mitte; 
+    Schriftstärke: fett; 
+    Rand oben: 12px; 
+    Schriftgröße: 14px;
+    Farbe: #007bff;
+}
+
+/* Anpassungen für kleine Bildschirme */
+@media (maximale Breite: 480 Pixel) {
+    Körper {
+        Polsterung: 10px;
+    }
+
+    bilden {
+        Breite: 100 %; 
+        max-width: 320px; /* Kompakter */
+padding: 15px; 
+}
+
+h2 {
+font-size: 18px;
+}
+
+p {
+font-size: 13px;
+}
+
+input, textarea {
+font-size: 13px;
+}
+
+button {
+font-size: 14px;
+padding: 10px;
+}
+}￼Dateiinhalt hier eingeben
+ 
