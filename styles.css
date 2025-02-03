@@ -1,0 +1,126 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Arial', sans-serif; 
+    background: #f8f9fa; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 15px; /* Espacio para evitar cortes en móviles */
+}
+
+/* Contenedor del formulario */
+form { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    width: 100%; 
+    max-width: 360px; /* Reduce el tamaño para una mejor adaptación */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Efecto de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px; /* Tamaño más adaptable */
+}
+
+/* Labels */
+label { 
+    font-weight: bold; 
+    display: block; 
+    margin-top: 8px; 
+    text-align: left;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Campos de entrada */
+input, textarea { 
+    width: 100%; 
+    padding: 12px; 
+    margin: 5px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 6px; 
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    font-family: inherit; /* Usa la misma fuente */
+}
+
+/* Estilos para que los campos no queden pegados a los bordes */
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.4);
+}
+
+/* Botón de enviar */
+button { 
+    background: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 12px; 
+    cursor: pointer; 
+    width: 100%; 
+    border-radius: 6px; 
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+/* Efecto al pasar el mouse sobre el botón */
+button:hover { 
+    background: #0056b3; 
+    transform: scale(1.02);
+    box-shadow: 0px 3px 8px rgba(0, 91, 187, 0.3);
+}
+
+/* Mensaje de confirmación o error */
+#mensaje { 
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 12px; 
+    font-size: 14px;
+    color: #007bff;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%; 
+        max-width: 320px; /* Más compacto */
+        padding: 15px; 
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    input, textarea {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
